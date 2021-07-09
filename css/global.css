@@ -1,3 +1,36 @@
 * {
-    background: #FFFFFF;
+    margin : 0px;
+    padding: 0px;
+}
+
+.container {
+    display              : grid;
+    grid-template-columns: 0.4fr 2.2fr 0.4fr;
+    grid-template-rows   : 0.3fr 2.4fr 0.3fr;
+    gap                  : 0px 0px;
+    grid-auto-flow       : row;
+    grid-template-areas  :
+        "left-side header header"
+        "left-side main right-side"
+        "left-side footer right-side";
+}
+
+.header {
+    grid-area: header;
+}
+
+.right-side {
+    grid-area: right-side;
+}
+
+.left-side {
+    grid-area: left-side;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.main {
+    grid-area: main;
 }

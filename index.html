@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Styles-->
-    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/left-side.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/heading.css">
 
     <!--Fonts-->
     <style>
@@ -17,60 +19,58 @@
     <title>Chuva - Frontend</title>
   </head>
   <body>
-    <header>
-      <div id="abv-title">
+    <div class="container">
+    <header class="header">
+      <div class="heading">
         Anais do Simpósio Latino Americano de Ciências de Alimentos 
       </div>
-      <div id="mid-title">
-        --HEADER-- Anais do 13º Simpósio Latino Americano de Ciência de
-        Alimentos
+      <div class="heading">
+       <h2>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h2>
       </div>
-      <div id="sub-title">ISSN: 1234-5678</div>
-      <div class="language-button">
-        <img class="language-button" src="img/language.svg" alt="language image" />
-        <form action="/action">
+      <div class="heading">ISSN: 1234-5678</div>
+      <div class="language-block">
+        <img src="img/language.svg" alt="language image" />
+        <form  action="/action">
           <label for="language"></label>
           <select name="language" id="language">
             <option value="">PT-BR</option>
           </select>
         </form>
-        <div class="login">
+      </div>
+        <div >
           <span>Bem vindo</span>
           <span>alguem12@galoascience.com</span>
           <img src="img/face.svg" alt="login image" />
         </div>
-      </div>
     </header>
-    <hr />
-    <aside class="side-menu">
-      <div>
-        <h1>SLACA 2019 --SIDE--</h1>
+    <aside>
+      <div class="side-logo">
+        <h1>SLACA 2019</h1>
       </div>
       <img src="img/slaca-logo.svg" alt="13 slaca logo" />
       <nav class="navigation-bar">
         <ul>
-          <li><a href="”#”">Apresentação</a></li>
-          <li><a href="”#”">Comitês</a></li>
-          <li><a href="”#”">Autores</a></li>
-          <li><a href="”#”">Eixos temáticos</a></li>
-          <li><a href="”#”">Trabalhos</a></li>
-          <li><a href="”#”">Contatos</a></li>
+          <li class="navigation-unit"><a  href="”#”">Apresentação</a></li>
+          <li class="navigation-unit"><a  href="”#”">Comitês</a></li>
+          <li class="navigation-unit"><a  href="”#”">Autores</a></li>
+          <li class="navigation-unit"><a  href="”#”">Eixos temáticos</a></li>
+          <li class="navigation-unit"><a  href="”#”">Trabalhos</a></li>
+          <li class="navigation-unit"><a  href="”#”">Contatos</a></li>
         </ul>
       </nav>
     </aside>
-    <hr />
-    <main>
+    <main class="main">
       <h1>--MAIN--</h1>
-      <section>
-        <div class="side-card">
+      <div>
+        <div>
           <h3>Detalhes</h3>
             <textarea style="overflow-y: scroll" id="w3review" name="w3review" rows="10" cols="25">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora cumque, et labore eius pariatur nihil repudiandae eos repellat, neque nemo iste quas consectetur enim delectus nam harum vel eaque.
               </textarea>
           </div>
         </div>
-      </section>
-      <section>
+      </div>
+      <div>
         <span>
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP
@@ -83,28 +83,28 @@
           </span>
           <span>Beatriz Christiane Melo</span>
         </div>
-      </section>
-      <section>
+      </div>
+      <div>
         Resumo
-      </section>
-      <article>
+      </div>
+      <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           illum facilis quam similique magni quos saepe ratione vel itaque cum.
           Voluptate omnis porro, asperiores veritatis quibusdam inventore non
           exercitationem necessitatibus.
         </p>
-      </article>
-      <section>
+      </div>
+      <div>
         Discussões
-      </section>
-      <article>
+      </div>
+      <div>
         <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
         <img src="img/hand-icon.svg" alt="" />
         <img src="img/q&a-icon.svg" alt="" />
         <img src="img/idea-icon.svg" alt="" />
         <button type="submit">+ criar tópico</button>
-      </article>
+      </div>
       <div class="card">
         <h5>Assunto da pergunta aparece aqui</h5>
         <span>Carlos Henrique Santos</span>
@@ -121,10 +121,10 @@
         <span>1 resposta</span>
       </div>
     </main>
-    <hr />
-    <footer>
+    <footer class="footer">
       <h1>--FOOTER--</h1>
       <img src="img/footer.svg" alt="" />
     </footer>
+  </div>
   </body>
 </html>
